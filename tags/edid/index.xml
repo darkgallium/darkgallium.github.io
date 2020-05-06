@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>edid on ~darkgallium</title>
+    <link>/tags/edid/</link>
+    <description>Recent content in edid on ~darkgallium</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 06 May 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/edid/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Fixing DVI input of my HP monitor</title>
+      <link>/posts/fix-screen-edid/</link>
+      <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/fix-screen-edid/</guid>
+      <description>I used to use my monitor, a HP L2245w, only by using its VGA input because it was the only cable I had lying around. But some time ago, I had a project that required to use its DVI port and I bought the cable.
+When hooking my PC to the monitor via DVI for the first time, I noticed that the resolution was really bad: 1024x768 was used even though my monitor supports 1680x1050 and it wasn&amp;rsquo;t possible to select higher resolutions using xrandr without creating a custom profile.</description>
+    </item>
+    
+  </channel>
+</rss>
