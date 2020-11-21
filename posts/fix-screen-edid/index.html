@@ -5,7 +5,7 @@
     <title>Fixing DVI input of my HP monitor :: ~darkgallium</title>
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="I used to use my monitor, a HP L2245w, only by using its VGA input because it was the only cable I had lying around. But some time ago, I had a project that required to use its DVI port and I bought the cable.
 When hooking my PC to the monitor via DVI for the first time, I noticed that the resolution was really bad: 1024x768 was used even though my monitor supports 1680x1050 and it wasn&amp;rsquo;t possible to select higher resolutions using xrandr without creating a custom profile." />
 <meta name="keywords" content="" />
@@ -24,7 +24,7 @@ When hooking my PC to the monitor via DVI for the first time, I noticed that the
 
 
 
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon-192x192.png">
 
   <link rel="shortcut icon" href="/img/favicon/green.png">
 
@@ -32,15 +32,14 @@ When hooking my PC to the monitor via DVI for the first time, I noticed that the
 
 <meta name="twitter:card" content="summary" />
 
-<meta name="twitter:creator" content="" />
 
 
 <meta property="og:locale" content="en" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="Fixing DVI input of my HP monitor :: ~darkgallium">
+<meta property="og:title" content="Fixing DVI input of my HP monitor">
 <meta property="og:description" content="The DVI input of my HP screen was weird. Turns out it was not a broken capacitor but a rather strange corruption in an EEPROM chip inside my screen." />
 <meta property="og:url" content="/posts/fix-screen-edid/" />
-<meta property="og:site_name" content="Fixing DVI input of my HP monitor" />
+<meta property="og:site_name" content="~darkgallium" />
 
   
     <meta property="og:image" content="/img/favicon/green.png">
@@ -64,7 +63,7 @@ When hooking my PC to the monitor via DVI for the first time, I noticed that the
 
 
 </head>
-<body class="">
+<body class="green">
 
 
 <div class="container center headings--one-size">
@@ -79,7 +78,9 @@ When hooking my PC to the monitor via DVI for the first time, I noticed that the
 </a>
 
     </div>
-    <div class="menu-trigger">menu</div>
+    
+      <div class="menu-trigger">menu</div>
+    
   </div>
   
     <nav class="menu">
@@ -124,10 +125,10 @@ When hooking my PC to the monitor via DVI for the first time, I noticed that the
   <h1 class="post-title">
     <a href="/posts/fix-screen-edid/">Fixing DVI input of my HP monitor</a></h1>
   <div class="post-meta">
-      
-    <span class="post-date">
-      2020-05-06
-    </span>
+    
+      <span class="post-date">
+        2020-05-06 
+      </span>
     
     
   </div>
@@ -142,6 +143,8 @@ When hooking my PC to the monitor via DVI for the first time, I noticed that the
     #<a href="/tags/edid/">edid</a>&nbsp;
     
   </span>
+  
+
   
 
   
@@ -180,7 +183,7 @@ When hooking my PC to the monitor via DVI for the first time, I noticed that the
 
 <p>All these options are pretty boring except the <code>Unlock EDID Write</code> one. Of course I want to unlock EDID write! So I enabled it but there was nothing in the interface itself that would indicate me how I write the EDID memory.</p>
 <h3 id="writing-the-edid-on-the-monitors-eeprom">Writing the EDID on the monitor&rsquo;s EEPROM<a href="#writing-the-edid-on-the-monitors-eeprom" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
-<p>Luckily, I stumbbled across <a href="https://www.youtube.com/watch?v=8IMkGdeXcS4">this</a> video from <strong>yzarc314</strong> that had a problem of screen image offset when he uses a DVI-HDMI cable on his LG screen, which was due to missing fields in the EDID of his monitor. They use the <a href="https://fr.wikipedia.org/wiki/I2C">I2C</a> bus provided by HDMI (which is used for display-host communication as per HDMI spec) to reprogam the memory holding the EDID information on his display.</p>
+<p>Luckily, I stumbbled across <a href="https://www.youtube.com/watch?v=8IMkGdeXcS4">this</a> video from <strong>yzarc314</strong> that had a problem of screen image offset when he uses a DVI-HDMI cable on his LG screen, which was due to missing fields in the EDID of his monitor. He/she uses the <a href="https://fr.wikipedia.org/wiki/I2C">I2C</a> bus provided by HDMI (which is used for display-host communication as per HDMI spec) to reprogam the memory holding the EDID information on his display.</p>
 <p>After all, as pointed out on <a href="https://electronics.stackexchange.com/questions/123957/hdmi-and-i-2-c">this</a> thread on StackExchange, it makes a ton of sense to wire directly the I2C bus of an EEPROM holding the EDID info directly onto the I2C pins of the DVI/HDMI, that way it makes it really easy to program the EEPROM.</p>
 <p>So I made the assumption that his method was going to work on my HP screen and began to follow his procedure that I&rsquo;ll detail here for the sake of completeness.</p>
 <ol>
@@ -255,6 +258,8 @@ sudo i2cset 0 0x50 0x01 0xff b
 
 <script src="/assets/main.js"></script>
 <script src="/assets/prism.js"></script>
+
+
 
 
 

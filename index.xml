@@ -6,11 +6,7 @@
     <description>Recent content in About on ~darkgallium</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 06 May 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 06 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fixing DVI input of my HP monitor</title>
       <link>/posts/fix-screen-edid/</link>
@@ -28,7 +24,7 @@ When hooking my PC to the monitor via DVI for the first time, I noticed that the
       
       <guid>/projects/</guid>
       <description>Software Current   mini, a minimal init system written in Rust (my first project in this language!). Its main set of features is nearly complete, it just lacks start/stop services support.
-  arduino-u2fhid, an effort to make a U2F FIDO compatible key from an Arduino Micro. Turns out the Arduino isn&amp;rsquo;t fast enough to implement the protocol (especially generate the ECDSA keys). I might change for a Teensy or a STM32 based card.</description>
+  arduino-u2fhid, an effort to make a U2F FIDO compatible key from an Arduino Micro. Turns out the Arduino isn’t fast enough to implement the protocol (especially generate the ECDSA keys). I might change for a Teensy or a STM32 based card.</description>
     </item>
     
   </channel>
