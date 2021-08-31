@@ -6,8 +6,9 @@
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Software Current   mini, a minimal init system written in Rust (my first project in this language!). Its main set of features is nearly complete, it just lacks start/stop services support.
-  arduino-u2fhid, an effort to make a U2F FIDO compatible key from an Arduino Micro. Turns out the Arduino isn’t fast enough to implement the protocol (especially generate the ECDSA keys). I might change for a Teensy or a STM32 based card." />
+<meta name="description" content="Software Current   confinebot, a more modern alternative to the famous eBot CS:GO match manager.
+  arduino-u2fhid, an effort to make a U2F FIDO compatible key from an Arduino Micro. Turns out the Arduino isn’t fast enough to implement the protocol (especially generate the ECDSA keys). I will try to port the code to ESP32 soon :)
+  Past   a port of LEDE 17.01 for my TP Link TL-850re v2 wifi AP (device with a NAND flash of only 4 MB)." />
 <meta name="keywords" content="" />
 <meta name="robots" content="noodp" />
 <link rel="canonical" href="/projects/" />
@@ -37,8 +38,9 @@
 <meta property="og:locale" content="en" />
 <meta property="og:type" content="article" />
 <meta property="og:title" content="Projects">
-<meta property="og:description" content="Software Current   mini, a minimal init system written in Rust (my first project in this language!). Its main set of features is nearly complete, it just lacks start/stop services support.
-  arduino-u2fhid, an effort to make a U2F FIDO compatible key from an Arduino Micro. Turns out the Arduino isn’t fast enough to implement the protocol (especially generate the ECDSA keys). I might change for a Teensy or a STM32 based card." />
+<meta property="og:description" content="Software Current   confinebot, a more modern alternative to the famous eBot CS:GO match manager.
+  arduino-u2fhid, an effort to make a U2F FIDO compatible key from an Arduino Micro. Turns out the Arduino isn’t fast enough to implement the protocol (especially generate the ECDSA keys). I will try to port the code to ESP32 soon :)
+  Past   a port of LEDE 17.01 for my TP Link TL-850re v2 wifi AP (device with a NAND flash of only 4 MB)." />
 <meta property="og:url" content="/projects/" />
 <meta property="og:site_name" content="~darkgallium" />
 
@@ -139,22 +141,22 @@
 <h3 id="current">Current<a href="#current" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
 <ul>
 <li>
-<p><a href="https://git.deuxfleurs.fr/darkgallium/mini">mini</a>, a minimal init system written in Rust (my first project in this language!). Its main set of features is nearly complete, it just lacks start/stop services support.</p>
+<p><a href="https://github.com/InsaLan/confinebot">confinebot</a>, a more modern alternative to the famous eBot CS:GO match manager.</p>
 </li>
 <li>
-<p><a href="https://github.com/darkgallium/arduino-u2fhid">arduino-u2fhid</a>, an effort to make a U2F FIDO compatible key from an Arduino Micro. Turns out the Arduino isn’t fast enough to implement the protocol (especially generate the ECDSA keys). I might change for a Teensy or a STM32 based card.</p>
-</li>
-<li>
-<p>a <a href="https://github.com/darkgallium/openwrt/tree/tl-850re-v2-backport1701">port</a> of LEDE 17.01 for my TP Link TL-850re v2 wifi AP (device with a NAND flash of only 4 MB). Not quite working at this time, device boots, failsafe mode works (luckily) but wifi &amp; ethernet don&rsquo;t in normal mode.</p>
+<p><a href="https://github.com/darkgallium/arduino-u2fhid">arduino-u2fhid</a>, an effort to make a U2F FIDO compatible key from an Arduino Micro. Turns out the Arduino isn’t fast enough to implement the protocol (especially generate the ECDSA keys). I will try to port the code to ESP32 <em>soon</em> :)</p>
 </li>
 </ul>
 <h3 id="past">Past<a href="#past" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
 <ul>
 <li>
-<p><a href="https://github.com/insalan/langate2000">langate2000</a>: a captive portal written in <strong>Python</strong> that authenticates users on the network, used at the InsaLan event. I was in charge of the frontend and some backend code.</p>
+<p>a <a href="https://github.com/darkgallium/openwrt/tree/tl-850re-v2-backport1701">port</a> of LEDE 17.01 for my TP Link TL-850re v2 wifi AP (device with a NAND flash of only 4 MB). Not quite working at this time, device boots, failsafe mode works (luckily) but wifi &amp; ethernet don&rsquo;t in normal mode.</p>
 </li>
 <li>
-<p><a href="https://github.com/darkgallium/shutter">shutter</a>: a simple screenshot tool written in <strong>C</strong> that aims to cover all of gnome-screenshot&rsquo;s features but as a CLI tool.</p>
+<p><a href="https://git.deuxfleurs.fr/darkgallium/mini">mini</a>, a minimal init system written in Rust (my first project in this language!). Its main set of features is nearly complete, it just lacks start/stop services support.</p>
+</li>
+<li>
+<p><a href="https://github.com/insalan/langate2000">langate2000</a>: a captive portal written in <strong>Python</strong> that authenticates users on the network, used at the InsaLan event. I was in charge of the frontend and some backend code.</p>
 </li>
 <li>
 <p>rainbow, a distributed rainbow table implementation written in <strong>C</strong> using the <strong>OpenMPI</strong> library, made as part of an internship at IRISA, supervised by Pr. Gildas Avoine.</p>
@@ -163,7 +165,7 @@
 <h2 id="talks">Talks<a href="#talks" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
 <ul>
 <li>
-<p>2021: Organizing a LAN-party in 2021 (rump @barback 2021, french): a small 5min presentation of the technical side of InsaLan, <a href="/rump-barback-2021/">slides</a></p>
+<p>2021: Organizing a LAN-party in 2021 (rump at <a href="https://www.barbhack.fr/">barbhack</a> 2021, french): a small 5min presentation of the technical side of <a href="https://www.insalan.fr">InsaLan</a>, <a href="/rump-barbhack-2021/">slides</a>.</p>
 </li>
 <li>
 <p>2019: Initial network training (french): some <a href="/formation-reseau-1/">slides</a> to give a minimal background for the newcomers in the network team at <a href="https://www.insalan.fr">InsaLan</a>.</p>

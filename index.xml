@@ -23,8 +23,9 @@ When hooking my PC to the monitor via DVI for the first time, I noticed that the
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/projects/</guid>
-      <description>Software Current   mini, a minimal init system written in Rust (my first project in this language!). Its main set of features is nearly complete, it just lacks start/stop services support.
-  arduino-u2fhid, an effort to make a U2F FIDO compatible key from an Arduino Micro. Turns out the Arduino isn’t fast enough to implement the protocol (especially generate the ECDSA keys). I might change for a Teensy or a STM32 based card.</description>
+      <description>Software Current   confinebot, a more modern alternative to the famous eBot CS:GO match manager.
+  arduino-u2fhid, an effort to make a U2F FIDO compatible key from an Arduino Micro. Turns out the Arduino isn’t fast enough to implement the protocol (especially generate the ECDSA keys). I will try to port the code to ESP32 soon :)
+  Past   a port of LEDE 17.01 for my TP Link TL-850re v2 wifi AP (device with a NAND flash of only 4 MB).</description>
     </item>
     
   </channel>
